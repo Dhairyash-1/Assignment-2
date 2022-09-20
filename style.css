@@ -161,12 +161,12 @@ body {
     }
 
     .logo {
-        padding-top: 7rem;
+        /* padding-top: 7rem; */
     }
 
     .left {
         width: 100vw;
-        padding: 7em 15em;
+        /* padding: 7em 15em; */
 
     }
 
@@ -220,6 +220,7 @@ body {
 
     .text-box {
         text-align: center;
+        padding-bottom: 5rem;
     }
 
 
