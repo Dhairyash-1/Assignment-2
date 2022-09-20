@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
-
+              /* test */
 * {
     margin: 0;
     padding: 0;
@@ -97,7 +97,7 @@ body {
 }
 
 .email button {
-    width: 12rem;
+    width: 8rem;
     border-radius: 5.5rem;
     height: 5.5rem;
     padding: 1rem 2rem;
@@ -114,7 +114,7 @@ body {
 
 .email button i {
     color: white;
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-align: center;
     margin: auto;
 }
