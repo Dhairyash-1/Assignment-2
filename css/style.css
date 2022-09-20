@@ -5,7 +5,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Josefin Sans', sans-serif;
-    /* transition: all .3s linear; */
 
 }
 
@@ -15,7 +14,7 @@ html {
 }
 
 body {
-    background: url(bg-pattern-desktop.svg) no-repeat center center /cover, linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    background: url(/img/bg-pattern-desktop.svg) no-repeat center center /cover, linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
     width: 100vw;
     height: 100vh;
 }
