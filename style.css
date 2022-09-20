@@ -15,13 +15,21 @@ html {
 }
 
 body {
-
     background: url(bg-pattern-desktop.svg) no-repeat center center /cover, linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
-    /* background: linear-gradient(135deg,); */
-
-
     width: 100vw;
     height: 100vh;
+}
+
+
+.container {
+    display: flex;
+}
+
+.left {
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .logo {
@@ -43,30 +51,17 @@ body {
     display: none;
 }
 
-.container {
-    display: flex;
-}
-
-.left {
-    width: 60vw;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    align-items: center;
-
-
-
-}
-
 .text-box {
     width: 45rem;
     min-width: 38rem;
-    /* padding-bottom: 7em; */
+}
 
+.text-box span {
+    color: hsl(0, 36%, 70%);
+    font-weight: 300;
 }
 
 .text-box h1 {
-
     color: black;
     letter-spacing: 1.5rem;
     line-height: 7rem;
@@ -75,10 +70,6 @@ body {
     padding-top: 12rem;
 }
 
-.text-box span {
-    color: hsl(0, 36%, 70%);
-    font-weight: 300;
-}
 
 .text-box p {
     color: hsl(0, 36%, 70%);
@@ -86,9 +77,6 @@ body {
     line-height: 2.5rem;
     padding-top: 2rem;
     padding-bottom: 5rem;
-
-
-
 }
 
 .email {
@@ -110,20 +98,15 @@ body {
 }
 
 .email button {
-
     width: 12rem;
     border-radius: 5.5rem;
     height: 5.5rem;
     padding: 1rem 2rem;
     border: .1rem solid hsl(0, 30%, 78%);
-    /* background: linear-gradient( 135deg, hsl(0, 36%, 70%),hsl(0, 93%, 68%)) ; */
     background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
     font-weight: 300;
     color: hsl(0, 36%, 70%);
     font-size: 1.6rem;
-}
-
-.email button {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -135,13 +118,10 @@ body {
     font-size: 3rem;
     text-align: center;
     margin: auto;
-
-
 }
 
 .hero-section {
     width: 40vw;
-
 }
 
 .hero-section img {
@@ -150,6 +130,11 @@ body {
     height: 100vh;
     width: 100%;
 }
+
+
+/* media queries start here  */
+
+
 
 @media(max-width:850px) {
     html {
@@ -160,20 +145,18 @@ body {
         height: 100%;
     }
 
-    .logo {
-        /* padding-top: 7rem; */
-    }
-
-    .left {
-        width: 100vw;
-        /* padding: 7em 15em; */
-
-    }
-
     .container {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+
+    .left {
+        width: 100vw;
+    }
+
+    .text-box {
+        padding-bottom: 10rem;
     }
 
     .hero-section {
@@ -214,15 +197,14 @@ body {
 
     }
 
-    .hero-section {
-        display: none;
-    }
-
     .text-box {
         text-align: center;
         padding-bottom: 15rem;
     }
 
+    .hero-section {
+        display: none;
+    }
 
 }
 
